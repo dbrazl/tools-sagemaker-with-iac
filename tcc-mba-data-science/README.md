@@ -2,7 +2,7 @@
 
 ![Banner](https://github-dbrazl.s3.amazonaws.com/machine-learning/banner-tcc-mba-data-science.jpg)
 
-Trabalho de Conclusão de Curso apresentado para obtenção do título de especialista em Data Science e Analytics – 2024.
+Trabalho de Conclusão de Curso apresentado para obtenção do título de especialista em Data Science e Analytics – Universidade de São Paulo – 2024.
 
 ## 📝 Resumo
 Este estudo tem como objetivo identificar os melhores métodos de aprendizado de máquina para prever inadimplência na concessão de crédito. Utilizando dados do repositório público “Statlog (German Credit Data)”, foram aplicados diversos modelos de machine learning, incluindo Regressão Logística, K Nearest Neighbors, Support Vector Machine, Gaussian Naive Bayes, Árvore de Decisão, Random Forest, XGBoost, Perceptron, Rede Neural Rasa e Rede Neural Profunda.
