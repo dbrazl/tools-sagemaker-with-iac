@@ -1,0 +1,9 @@
+{
+  "Parameters": {
+    "DomainName": "sagemaker-domain-main",
+    "S3Bucket": "sagemaker-domain-main",
+    "VPCId": "vpc-48f21333",
+    "SubnetIds": ["subnet-b62febb9", "subnet-1e6f417a"],
+    "UserProfileName": "daniel-ml-engineer"
+  }
+}

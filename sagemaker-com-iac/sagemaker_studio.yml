@@ -1,0 +1,44 @@
+
+AWSTemplateFormatVersion: "2010-09-09"
+Description: CloudFormation Templates for provisioning sage maker studio and domain
+Parameters:
+  DomainName:
+    Type: String
+    Description: "Sagameker Domain Name"
+    Default: "Mydomain"
+  S3Bucket:
+    Type: String
+    Description: "S3 Bucket"
+    Default: "test-studio-cf"
+  UserProfileName:
+    Type: String
+    Description: "user profile name"
+    Default: "DefaultUser"
+  VPCId:
+    Type: String
+    Description: VPC Id
+    Default: "vpc-xxxxxx"
+  SubnetIds:
+    Type: CommaDelimitedList
+    Description: Subnet Ids
+    Default: "subnet-xxxxx"
+  UserProfileName:
+    Type: String
+    Description: User Profile Name
+
+Resources:
+  SageMakerExecutionRole:
+    Type: "AWS::IAM::Role"
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - sagemaker.amazonaws.com
+              Action:
+                - "sts:AssumeRole"
+      Path: /
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonSageMakerFullAccess
